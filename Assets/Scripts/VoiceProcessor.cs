@@ -342,7 +342,13 @@ public class VoiceProcessor : MonoBehaviour
 
     void Say(string response)
     {
-        string command = $"Add-Type –AssemblyName System.Speech; (New-Object System.Speech.Synthesis.SpeechSynthesizer).Speak('{response}')";
-        System.Diagnostics.Process.Start("powershell", $"-Command \"{command}\"");
+        // string command = $"Add-Type –AssemblyName System.Speech; (New-Object System.Speech.Synthesis.SpeechSynthesizer).Speak('{response}')";
+        // var psi = new System.Diagnostics.ProcessStartInfo();
+        // psi.FileName = "powershell";
+        // psi.Arguments = $"-Command \"{command}\"";
+        // psi.CreateNoWindow = true;      // 不创建窗口
+        // psi.UseShellExecute = false;    // 必须为false才能隐藏窗口
+        // psi.WindowStyle = System.Diagnostics.ProcessWindowStyle.Hidden; // 彻底隐藏窗口
+        // System.Diagnostics.Process.Start(psi);
     }
 }

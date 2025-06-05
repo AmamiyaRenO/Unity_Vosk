@@ -252,7 +252,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -20, y: 300}
-  m_SizeDelta: {x: 400, y: 600}
+  m_SizeDelta: {x: 500, y: 600}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &862585975
 MonoBehaviour:
@@ -443,7 +443,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Coordinate System : Start from (0,0)'
+  m_Text: Game starts here
 --- !u!222 &1254973096
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -571,7 +571,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 1000, y: 300}
-  m_SizeDelta: {x: 900, y: 600}
+  m_SizeDelta: {x: 1000, y: 600}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1687368094
 MonoBehaviour:
@@ -833,9 +833,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Voice Command
-
-    (Only Receive : forward,backward,left,right)'
+  m_Text: Voice Input Log
 --- !u!222 &1973224740
 CanvasRenderer:
   m_ObjectHideFlags: 0

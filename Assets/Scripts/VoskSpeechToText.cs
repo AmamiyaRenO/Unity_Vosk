@@ -15,7 +15,7 @@ using Vosk;
 public class VoskSpeechToText : MonoBehaviour
 {
 	[Tooltip("Location of the model, relative to the Streaming Assets folder.")]
-	public string ModelPath = "vosk-model-small-ru-0.22.zip";
+	public string ModelPath = "vosk-model-en-us-0.22.zip";
 
 	[Tooltip("The source of the microphone input.")]
 
@@ -85,7 +85,36 @@ public class VoskSpeechToText : MonoBehaviour
 	//If Auto start is enabled, starts vosk speech to text.
 	void Start()
 	{
-		KeyPhrases = new List<string> { "forward", "backward", "left", "right" };
+		KeyPhrases = new List<string> { 
+		
+			"bookshelf",
+			"shelf",
+			"note",
+			"book",
+			"key",
+			
+			
+			"center",
+			"middle",
+			"center",
+			"desk",
+			"table",
+			"door",
+			"exit",
+			
+		
+			"look",
+			"examine",
+			"take",
+			"use",
+			"open",
+			"unlock",
+			"go",
+			"to",
+			"move",
+			"read",
+			"help"
+		};
 		if (AutoStart)
 		{
 			StartVoskStt();
